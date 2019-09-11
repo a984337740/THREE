@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "baseUrl": "http://localhost:8080",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ]
+    },
+    "include": [
+        "./src/**/*", "public/build"
+    ]
+}
