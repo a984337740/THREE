@@ -1,7 +1,8 @@
 {
-  "name": "threejs_react",
-  "version": "0.1.0",
-  "private": true,
+  "name": "three.js-react",
+  "version": "1.1.0",
+  "private": false,
+  "main": "./dist/index.js",
   "dependencies": {
     "@material-ui/core": "^4.4.0",
     "react": "^16.9.0",
@@ -25,7 +26,6 @@
     "typescript": "^3.6.2"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/a984337740/THREE.js.git"

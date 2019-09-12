@@ -2,6 +2,7 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "baseUrl": "http://localhost:8080",
+        "rootDir": "src",
         "sourceMap": true,
         "noImplicitAny": false,
         "moduleResolution": "node",
@@ -17,6 +18,9 @@
         ]
     },
     "include": [
-        "./src/**/*", "public/build"
+        "./src/components/**/*",
+        // "./src/core/**/*",
+        "./src/index.ts",
+        "./src/build/*"
     ]
 }
