@@ -1,26 +1,21 @@
 {
     "compilerOptions": {
         "outDir": "./dist/",
-        "baseUrl": "http://localhost:8080",
         "rootDir": "src",
-        "sourceMap": true,
-        "noImplicitAny": false,
-        "moduleResolution": "node",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "module": "commonjs",
         "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "noImplicitAny": false ,
+        "declaration": true,
         "jsx": "react",
-        "lib": [
-            "es5",
-            "es6",
-            "dom"
-        ]
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
     },
     "include": [
         "./src/components/**/*",
-        // "./src/core/**/*",
-        "./src/index.ts",
-        "./src/build/*"
+        "./src/threeMaster/**/*",
+        "./src/src/**/*", 
+        "./src/index.ts" 
+         
     ]
-}
+} 
