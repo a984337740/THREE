@@ -1,111 +1,92 @@
-// TODO: all nodes
-
+"use strict";
 // core
-
-export { Node } from './core/Node.js';
-export { TempNode } from './core/TempNode.js';
-export { InputNode } from './core/InputNode.js';
-export { ConstNode } from './core/ConstNode.js';
-export { VarNode } from './core/VarNode.js';
-export { StructNode } from './core/StructNode.js';
-export { AttributeNode } from './core/AttributeNode.js';
-export { FunctionNode } from './core/FunctionNode.js';
-export { ExpressionNode } from './core/ExpressionNode.js';
-export { FunctionCallNode } from './core/FunctionCallNode.js';
-export { NodeLib } from './core/NodeLib.js';
-export { NodeUtils } from './core/NodeUtils.js';
-export { NodeFrame } from './core/NodeFrame.js';
-export { NodeUniform } from './core/NodeUniform.js';
-export { NodeBuilder } from './core/NodeBuilder.js';
-
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(require("./core/Node"));
+__export(require("./core/TempNode"));
+__export(require("./core/InputNode"));
+__export(require("./core/ConstNode"));
+__export(require("./core/VarNode"));
+__export(require("./core/StructNode"));
+__export(require("./core/AttributeNode"));
+__export(require("./core/FunctionNode"));
+__export(require("./core/ExpressionNode"));
+__export(require("./core/FunctionCallNode"));
+__export(require("./core/NodeLib"));
+__export(require("./core/NodeUtils"));
+__export(require("./core/NodeFrame"));
+__export(require("./core/NodeUniform"));
+__export(require("./core/NodeBuilder"));
 // inputs
-
-export { BoolNode } from './inputs/BoolNode.js';
-export { IntNode } from './inputs/IntNode.js';
-export { FloatNode } from './inputs/FloatNode.js';
-export { Vector2Node } from './inputs/Vector2Node.js';
-export { Vector3Node } from './inputs/Vector3Node.js';
-export { Vector4Node } from './inputs/Vector4Node.js';
-export { ColorNode } from './inputs/ColorNode.js';
-export { Matrix3Node } from './inputs/Matrix3Node.js';
-export { Matrix4Node } from './inputs/Matrix4Node.js';
-export { TextureNode } from './inputs/TextureNode.js';
-export { CubeTextureNode } from './inputs/CubeTextureNode.js';
-export { ScreenNode } from './inputs/ScreenNode.js';
-export { ReflectorNode } from './inputs/ReflectorNode.js';
-export { PropertyNode } from './inputs/PropertyNode.js';
-export { RTTNode } from './inputs/RTTNode.js';
-
+__export(require("./inputs/BoolNode"));
+__export(require("./inputs/IntNode"));
+__export(require("./inputs/FloatNode"));
+__export(require("./inputs/Vector2Node"));
+__export(require("./inputs/Vector3Node"));
+__export(require("./inputs/Vector4Node"));
+__export(require("./inputs/ColorNode"));
+__export(require("./inputs/Matrix3Node"));
+__export(require("./inputs/Matrix4Node"));
+__export(require("./inputs/TextureNode"));
+__export(require("./inputs/CubeTextureNode"));
+__export(require("./inputs/ScreenNode"));
+__export(require("./inputs/ReflectorNode"));
+__export(require("./inputs/PropertyNode"));
+__export(require("./inputs/RTTNode"));
 // accessors
-
-export { UVNode } from './accessors/UVNode.js';
-export { ColorsNode } from './accessors/ColorsNode.js';
-export { PositionNode } from './accessors/PositionNode.js';
-export { NormalNode } from './accessors/NormalNode.js';
-export { CameraNode } from './accessors/CameraNode.js';
-export { LightNode } from './accessors/LightNode.js';
-export { ReflectNode } from './accessors/ReflectNode.js';
-export { ScreenUVNode } from './accessors/ScreenUVNode.js';
-export { ResolutionNode } from './accessors/ResolutionNode.js';
-
+__export(require("./accessors/UVNode"));
+__export(require("./accessors/ColorsNode"));
+__export(require("./accessors/PositionNode"));
+__export(require("./accessors/NormalNode"));
+__export(require("./accessors/CameraNode"));
+__export(require("./accessors/LightNode"));
+__export(require("./accessors/ReflectNode"));
+__export(require("./accessors/ScreenUVNode"));
+__export(require("./accessors/ResolutionNode"));
 // math
-
-export { MathNode } from './math/MathNode.js';
-export { OperatorNode } from './math/OperatorNode.js';
-export { CondNode } from './math/CondNode.js';
-
+__export(require("./math/MathNode"));
+__export(require("./math/OperatorNode"));
+__export(require("./math/CondNode"));
 // procedural
-
-export { NoiseNode } from './procedural/NoiseNode.js';
-export { CheckerNode } from './procedural/CheckerNode.js';
-
+__export(require("./procedural/NoiseNode"));
+__export(require("./procedural/CheckerNode"));
 // bsdfs
-
-export { BlinnShininessExponentNode } from './bsdfs/BlinnShininessExponentNode.js';
-export { BlinnExponentToRoughnessNode } from './bsdfs/BlinnExponentToRoughnessNode.js';
-export { RoughnessToBlinnExponentNode } from './bsdfs/RoughnessToBlinnExponentNode.js';
-
+__export(require("./bsdfs/BlinnShininessExponentNode"));
+__export(require("./bsdfs/BlinnExponentToRoughnessNode"));
+__export(require("./bsdfs/RoughnessToBlinnExponentNode"));
 // misc
-
-export { TextureCubeUVNode } from './misc/TextureCubeUVNode.js';
-export { TextureCubeNode } from './misc/TextureCubeNode.js';
-export { NormalMapNode } from './misc/NormalMapNode.js';
-export { BumpMapNode } from './misc/BumpMapNode.js';
-
+__export(require("./misc/TextureCubeUVNode"));
+__export(require("./misc/TextureCubeNode"));
+__export(require("./misc/NormalMapNode"));
+__export(require("./misc/BumpMapNode"));
 // utils
-
-export { BypassNode } from './utils/BypassNode.js';
-export { JoinNode } from './utils/JoinNode.js';
-export { SwitchNode } from './utils/SwitchNode.js';
-export { TimerNode } from './utils/TimerNode.js';
-export { VelocityNode } from './utils/VelocityNode.js';
-export { UVTransformNode } from './utils/UVTransformNode.js';
-export { MaxMIPLevelNode } from './utils/MaxMIPLevelNode.js';
-export { ColorSpaceNode } from './utils/ColorSpaceNode.js';
-
+__export(require("./utils/BypassNode"));
+__export(require("./utils/JoinNode"));
+__export(require("./utils/SwitchNode"));
+__export(require("./utils/TimerNode"));
+__export(require("./utils/VelocityNode"));
+__export(require("./utils/UVTransformNode"));
+__export(require("./utils/MaxMIPLevelNode"));
+__export(require("./utils/ColorSpaceNode"));
 // effects
-
-export { BlurNode } from './effects/BlurNode.js';
-export { ColorAdjustmentNode } from './effects/ColorAdjustmentNode.js';
-export { LuminanceNode } from './effects/LuminanceNode.js';
-
+__export(require("./effects/BlurNode"));
+__export(require("./effects/ColorAdjustmentNode"));
+__export(require("./effects/LuminanceNode"));
 // material nodes
-
-export { RawNode } from './materials/nodes/RawNode.js';
-export { SpriteNode } from './materials/nodes/SpriteNode.js';
-export { PhongNode } from './materials/nodes/PhongNode.js';
-export { StandardNode } from './materials/nodes/StandardNode.js';
-export { MeshStandardNode } from './materials/nodes/MeshStandardNode.js';
-
+__export(require("./materials/nodes/RawNode"));
+__export(require("./materials/nodes/SpriteNode"));
+__export(require("./materials/nodes/PhongNode"));
+__export(require("./materials/nodes/StandardNode"));
+__export(require("./materials/nodes/MeshStandardNode"));
 // materials
-
-export { NodeMaterial } from './materials/NodeMaterial.js';
-export { SpriteNodeMaterial } from './materials/SpriteNodeMaterial.js';
-export { PhongNodeMaterial } from './materials/PhongNodeMaterial.js';
-export { StandardNodeMaterial } from './materials/StandardNodeMaterial.js';
-export { MeshStandardNodeMaterial } from './materials/MeshStandardNodeMaterial.js';
-
+__export(require("./materials/NodeMaterial"));
+__export(require("./materials/SpriteNodeMaterial"));
+__export(require("./materials/PhongNodeMaterial"));
+__export(require("./materials/StandardNodeMaterial"));
+__export(require("./materials/MeshStandardNodeMaterial"));
 // postprocessing
-
-export { NodePostProcessing } from './postprocessing/NodePostProcessing.js';
-//export { NodePass } from './postprocessing/NodePass.js';
+__export(require("./postprocessing/NodePostProcessing"));
+// export * from './postprocessing/NodePass';
+//# sourceMappingURL=Node.js.map
