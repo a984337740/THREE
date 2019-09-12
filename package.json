@@ -1,5 +1,5 @@
 {
-  "name": "three.js-react",
+  "name": "threejs-react",
   "version": "1.1.2",
   "private": false,
   "main": "./dist/index.js",
